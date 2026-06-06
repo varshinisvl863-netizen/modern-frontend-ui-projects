@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Listing Page</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* Header */
+.header{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.header h1{
+    margin-bottom:10px;
+}
+
+/* Search Box */
+.search-box{
+    text-align:center;
+    padding:20px;
+}
+
+.search-box input{
+    width:80%;
+    max-width:500px;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+}
+
+/* Product Grid */
+.product-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+/* Product Card */
+.product-card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-5px);
+}
+
+.product-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.product-info{
+    padding:15px;
+}
+
+.product-info h3{
+    margin-bottom:10px;
+    color:#333;
+}
+
+.product-info p{
+    color:#666;
+    margin-bottom:10px;
+}
+
+.price{
+    color:green;
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.btn{
+    width:100%;
+    padding:10px;
+    border:none;
+    background:#007bff;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.btn:hover{
+    background:#0056b3;
+}
+
+/* Responsive */
+@media (max-width:768px){
+    .search-box input{
+        width:95%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Product Listing Page</h1>
+    <p>Browse Our Products</p>
+</div>
+
+<div class="search-box">
+    <input type="text" placeholder="Search products...">
+</div>
+
+<div class="product-container">
+
+    <div class="product-card">
+        <img src="https://picsum.photos/300/220?1" alt="Product 1">
+        <div class="product-info">
+            <h3>Wireless Headphones</h3>
+            <p>High-quality sound with noise cancellation.</p>
+            <div class="price">₹2,999</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://picsum.photos/300/220?2" alt="Product 2">
+        <div class="product-info">
+            <h3>Smart Watch</h3>
+            <p>Fitness tracking and smart notifications.</p>
+            <div class="price">₹4,499</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://picsum.photos/300/220?3" alt="Product 3">
+        <div class="product-info">
+            <h3>Gaming Mouse</h3>
+            <p>RGB lighting with ergonomic design.</p>
+            <div class="price">₹1,299</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://picsum.photos/300/220?4" alt="Product 4">
+        <div class="product-info">
+            <h3>Bluetooth Speaker</h3>
+            <p>Portable speaker with deep bass.</p>
+            <div class="price">₹1,999</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://picsum.photos/300/220?5" alt="Product 5">
+        <div class="product-info">
+            <h3>Laptop Backpack</h3>
+            <p>Stylish and water-resistant backpack.</p>
+            <div class="price">₹899</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="https://picsum.photos/300/220?6" alt="Product 6">
+        <div class="product-info">
+            <h3>Wireless Keyboard</h3>
+            <p>Compact keyboard for office and home use.</p>
+            <div class="price">₹1,599</div>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
